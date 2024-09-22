@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    flex-wrap: wrap; /*imagens ocupem espaço disponível*/
+    gap: 24px; /*espaço entre as imagens*/
+}
+
+main img {
+    width: 286px; /*quadrado perfeito, especificado no figma*/
+    height: 286px;
+    object-fit: cover;
+}
