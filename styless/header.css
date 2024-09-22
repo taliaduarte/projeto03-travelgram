@@ -1,0 +1,43 @@
+header {
+    padding-block: 32px; /**/
+    font: var(--text-medium);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /*coloca espaço entre os elementos do container*/
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#profile > div {
+    max-width: 380px; /*weidth máxima da caixa de texto no figma 252px*/
+}
+
+
+
+#profile h1 {
+    font: var(--text-large);
+    color: var(--text-color-primary);
+    margin-bottom: 8px;
+}
+
+#info {
+    list-style: none; /*tirar o ícone auto de lista*/
+
+    display: flex; /*se deixar só esse fica um ao lado do outro*/
+    flex-direction: column; /*deixa um abaixo do outro*/
+    gap: 16px; /*distancia entre elementos da lista*/
+    width: 280px; /*configuração do figma*/
+}
+
+#info li {
+    display: flex;
+    align-items: center;
+}
