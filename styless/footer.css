@@ -2,6 +2,8 @@ footer {
     display: flex;
     gap: 24px; /*somando o espaço entre eles 16 + espaço entre os elementos em cada caixa de texto 4 + 4*/
     padding-block: 24px; /*distância em cima e embaixo elemento*/
+
+    font: 14px/150% var(--font-family);
 }
 
 /*baixo veja como chamar o filho de uma caixa*/

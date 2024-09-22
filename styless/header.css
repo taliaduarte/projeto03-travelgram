@@ -20,7 +20,12 @@ header .container {
     max-width: 380px; /*weidth máxima da caixa de texto no figma 252px*/
 }
 
-
+#profile img {
+    width: 176px; /*valores de W e H do figma*/
+    height: 176px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 #profile h1 {
     font: var(--text-large);
