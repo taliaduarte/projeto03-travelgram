@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    gap: 24px; /*somando o espaço entre eles 16 + espaço entre os elementos em cada caixa de texto 4 + 4*/
+    padding-block: 24px; /*distância em cima e embaixo elemento*/
+}
+
+/*baixo veja como chamar o filho de uma caixa*/
+footer span:nth-child(1) {
+    margin-right: auto;
+}
+/*footer é a caixa e span é o filho que você está buscando e o número entre parentes e a posição deste filho*/
+
