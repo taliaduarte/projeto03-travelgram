@@ -1,7 +1,9 @@
 main {
     display: flex;
     flex-wrap: wrap; /*imagens ocupem espaço disponível*/
+    justify-content: center;
     gap: 24px; /*espaço entre as imagens*/
+    padding-top: 1.5rem;
 }
 
 main img {

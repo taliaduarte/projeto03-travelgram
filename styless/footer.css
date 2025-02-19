@@ -1,14 +1,35 @@
 footer {
     display: flex;
     gap: 24px; /*somando o espaço entre eles 16 + espaço entre os elementos em cada caixa de texto 4 + 4*/
-    padding-block: 24px; /*distância em cima e embaixo elemento*/
+    padding: 24px; /*distância em cima e embaixo elemento*/
 
+    
     font: 14px/150% var(--font-family);
 }
 
-/*baixo veja como chamar o filho de uma caixa*/
-footer span:nth-child(1) {
+
+footer :nth-child(1) {
     margin-right: auto;
 }
+
+
 /*footer é a caixa e span é o filho que você está buscando e o número entre parentes e a posição deste filho*/
 
+@media (max-width: 767px) {
+    footer :nth-child(1) {
+        margin: auto;
+    }
+
+    footer {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center; /* Centraliza o texto */
+        align-items: center; /* Centraliza horizontalmente */
+        gap: 1rem;
+    }
+
+    .links {
+        display: flex;
+    gap: 1rem; /* Adiciona espaço entre os links */
+    flex-wrap: wrap; /* Evita quebra de linha desnecessária */
+    }
+}

@@ -1,9 +1,9 @@
 header {
-    padding-block: 32px; /**/
+    padding: 2rem;
     font: var(--text-medium);
 }
 
-header .container {
+header .container-header {
     display: flex;
     justify-content: space-between; /*coloca espaço entre os elementos do container*/
     align-items: center;
@@ -45,4 +45,35 @@ header .container {
 #info li {
     display: flex;
     align-items: center;
+}
+
+.list ul li {
+    margin-bottom: 1rem;
+}
+
+.list ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    header .container-header {
+        display: grid;
+        justify-content: space-between; /*coloca espaço entre os elementos do container*/
+        align-items: center;
+    }
+
+    #profile {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards {
+        flex-direction: row; /* Muda para linha (lado a lado) em telas maiores */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
 }
